@@ -15,10 +15,13 @@
     "gatsby-transformer-sharp": "^2.1.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-confetti": "^2.4.1",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-stripe-checkout": "^2.6.3"
   },
   "devDependencies": {
+    "netlify-lambda": "^1.4.2",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -30,6 +33,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
+    "start:lambda": "netlify-lambda serve src/lambda",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
